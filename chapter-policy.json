@@ -1,0 +1,20 @@
+{
+  "core_mutable_files": [
+    "00_设定层/03_分章大纲.md",
+    "01_运行层/04_状态快照.md",
+    "01_运行层/05_伏笔表.md",
+    "01_运行层/05f_悬念账.md",
+    "01_运行层/06_事实记录.md",
+    "01_运行层/06b_事实记录_已归档段.md",
+    "06_归档/流程审计.md"
+  ],
+  "format": "novel-chapter-commit-policy",
+  "kid_files": [
+    "05_正文/{kid}.md",
+    "06_归档/章节卡_{kid}.md"
+  ],
+  "kid_patterns": [
+    "^06_归档/梗概_{kid}(?:_[^/]+)?\\.md$"
+  ],
+  "schema_version": 1
+}

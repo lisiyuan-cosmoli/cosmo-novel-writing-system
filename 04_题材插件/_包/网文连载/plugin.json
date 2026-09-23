@@ -1,0 +1,42 @@
+{
+  "chapter_mutable_files": [
+    "01_运行层/05e_钩子与爽点表.md"
+  ],
+  "files": [
+    {
+      "owner": "user",
+      "source": "templates/00_设定层/插件/serial.md",
+      "target": "00_设定层/插件/serial.md"
+    },
+    {
+      "owner": "user",
+      "source": "templates/01_运行层/05e_钩子与爽点表.md",
+      "target": "01_运行层/05e_钩子与爽点表.md"
+    },
+    {
+      "owner": "system",
+      "source": "templates/02_检查层/插件/serial.md",
+      "target": "02_检查层/插件/serial.md"
+    }
+  ],
+  "foundation_files": [
+    "00_设定层/插件/serial.md"
+  ],
+  "id": "serial",
+  "name": "网文连载",
+  "required_markers": {
+    "00_设定层/插件/serial.md": [
+      "## 连载约定"
+    ],
+    "01_运行层/05e_钩子与爽点表.md": [
+      "## 章节回报"
+    ],
+    "02_检查层/插件/serial.md": [
+      "章末钩子"
+    ]
+  },
+  "schema_versions": [
+    2
+  ],
+  "version": "4.0.0"
+}

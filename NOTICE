@@ -1,0 +1,28 @@
+COSMO 小说创作系统 (Novel Writing System)
+Copyright 2026 LISIYUAN
+Source: https://github.com/lisiyuan-cosmoli/cosmo-novel-writing-system
+
+本仓库采用分范围许可，不是任选一种许可覆盖整个仓库。
+
+一、软件：Apache License 2.0（全文见 LICENSE）
+    全部 .py、.sh、.command、.css、.js、.json、.yml、.yaml 文件；
+    .gitignore、.gitattributes、docs/.nojekyll 等仓库和网站配置。
+    软件中的测试夹具与代码注释按软件许可提供。
+
+二、文档、空白模板与展示内容：CC BY-SA 4.0（见 LICENSE-docs）
+    全部 .md、.txt、.html 文档、提示词、词表及空白模板；
+    网站 HTML 中的正文、结构、内联 SVG 和原创流程示意；
+    docs/assets/ 中的“卷页”标志 SVG 与 ICO。
+    许可证自身保留各自原有的法律文本与声明。
+
+三、使用者的内容
+    本项目不对使用者创作的小说、填写的设定、样本、状态、账本、
+    章节卡、归档及 project.json 项目数据提出权利要求，也不要求
+    因使用本系统而公开这些内容。引用的第三方材料仍按原权利处理。
+    本仓库对空白模板的授权不等于取得使用者填入内容的授权。
+
+系统核心工具本地运行，不自行上传作品。使用者主动提供给 AI 服务、
+托管仓库或其他工具的材料，由相应服务及操作处理；不能据此承诺
+文件永不离开设备。网站不加载第三方运行资源或统计脚本。
+
+Apache-2.0 与 CC BY-SA 4.0 均按各自条款以“原样”提供。

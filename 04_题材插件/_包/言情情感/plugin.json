@@ -1,0 +1,43 @@
+{
+  "chapter_mutable_files": [
+    "01_运行层/05c_情感节拍表.md"
+  ],
+  "files": [
+    {
+      "owner": "user",
+      "source": "templates/00_设定层/插件/romance.md",
+      "target": "00_设定层/插件/romance.md"
+    },
+    {
+      "owner": "user",
+      "source": "templates/01_运行层/05c_情感节拍表.md",
+      "target": "01_运行层/05c_情感节拍表.md"
+    },
+    {
+      "owner": "system",
+      "source": "templates/02_检查层/插件/romance.md",
+      "target": "02_检查层/插件/romance.md"
+    }
+  ],
+  "foundation_files": [
+    "00_设定层/插件/romance.md"
+  ],
+  "id": "romance",
+  "name": "言情情感",
+  "required_markers": {
+    "00_设定层/插件/romance.md": [
+      "## 关系约定",
+      "## 关系轴"
+    ],
+    "01_运行层/05c_情感节拍表.md": [
+      "## 情感节拍"
+    ],
+    "02_检查层/插件/romance.md": [
+      "刻度移动了吗"
+    ]
+  },
+  "schema_versions": [
+    2
+  ],
+  "version": "3.7.0"
+}

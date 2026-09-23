@@ -1,0 +1,54 @@
+{
+  "chapter_mutable_files": [
+    "01_运行层/05b_线索兑现表.md",
+    "06_归档/线索归档.md"
+  ],
+  "files": [
+    {
+      "owner": "user",
+      "source": "templates/01_运行层/05b_线索兑现表.md",
+      "target": "01_运行层/05b_线索兑现表.md"
+    },
+    {
+      "owner": "user",
+      "source": "templates/00_设定层/插件/suspense.md",
+      "target": "00_设定层/插件/suspense.md"
+    },
+    {
+      "owner": "system",
+      "source": "templates/02_检查层/插件/suspense.md",
+      "target": "02_检查层/插件/suspense.md"
+    },
+    {
+      "owner": "user",
+      "source": "templates/06_归档/线索归档.md",
+      "target": "06_归档/线索归档.md"
+    }
+  ],
+  "foundation_files": [
+    "00_设定层/插件/suspense.md"
+  ],
+  "id": "suspense",
+  "name": "悬疑推理",
+  "required_markers": {
+    "00_设定层/插件/suspense.md": [
+      "## 真相时间线"
+    ],
+    "01_运行层/05b_线索兑现表.md": [
+      "## 活跃线索",
+      "## 读者怀疑排序",
+      "## 调查者已掌握证据"
+    ],
+    "02_检查层/插件/suspense.md": [
+      "对照真相时间线",
+      "线索登记"
+    ],
+    "06_归档/线索归档.md": [
+      "## 已结清线索"
+    ]
+  },
+  "schema_versions": [
+    2
+  ],
+  "version": "3.6.1"
+}

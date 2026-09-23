@@ -1,0 +1,42 @@
+name: 功能建议
+description: 说明具体使用场景与可验证的改善
+title: "[建议] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        使用合成案例，不要上传真实小说、未公开设定、身份资料或密钥。
+        大的流程调整先讨论目标与兼容方式；维护者会评估范围和维护成本。
+  - type: checkboxes
+    id: preparation
+    attributes:
+      label: 提交前核对
+      options:
+        - label: 我已检索相关建议，描述中没有真实作品或敏感信息。
+          required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 使用场景与当前困难
+      description: 说明你想完成什么、现在怎样做，以及具体卡在哪里。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望怎样改善
+      description: 描述行为或结果；可以给出替代方案，不必预先设计全部实现。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 怎样确认有效
+      description: 给出可观察的结果或合成案例；工具结果与文学质量判断请分别说明。
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: 旧项目与写入边界
+      description: 是否影响现有作品、候选、批准摘要、同步或插件？不确定可以直接写不确定。

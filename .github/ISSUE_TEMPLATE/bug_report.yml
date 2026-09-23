@@ -1,0 +1,62 @@
+name: 问题报告
+description: 用合成案例报告可复现的工具问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿上传真实小说、身份资料、密钥、令牌或完整项目。日志中的私人路径也需替换。
+        安全漏洞请先阅读 [SECURITY.md](https://github.com/lisiyuan-cosmoli/cosmo-novel-writing-system/blob/main/SECURITY.md)，不要在公开 Issue 披露利用细节。
+  - type: checkboxes
+    id: preparation
+    attributes:
+      label: 提交前核对
+      options:
+        - label: 我已检索现有问题，并使用合成数据替代真实作品与敏感信息。
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: 系统版本或提交号
+      placeholder: "例如：6.0；或 git rev-parse --short HEAD 的输出"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 操作系统、Python 版本、使用入口，以及是否安装定制插件；不要填写真实用户名或私人路径。
+      placeholder: "例如：macOS；Python 3.12；终端 CLI；无定制插件"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 最少复现步骤
+      description: 从隔离新项目或合成夹具开始，给出实际命令和必要的最小输入。
+      placeholder: |
+        1. 准备怎样的合成项目
+        2. 运行什么命令
+        3. 在哪里观察到问题
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果与必要错误文本
+      description: 保留报错关键内容；不要上传正文、完整运行目录、备份或候选存根。
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: 已做的验证
+      description: 填写实际运行的命令和结果；没有执行就写未执行。母版检查使用 python3 -B novel.py doctor --template，完整回归使用 python3 -B novel.py release-test。
+    validations:
+      required: true

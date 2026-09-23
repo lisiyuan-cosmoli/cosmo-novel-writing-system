@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    {
+      "id": "suspense",
+      "manifest": "_包/悬疑推理/plugin.json",
+      "name": "悬疑推理",
+      "status": "supported"
+    },
+    {
+      "id": "romance",
+      "manifest": "_包/言情情感/plugin.json",
+      "name": "言情情感",
+      "status": "supported"
+    },
+    {
+      "id": "speculative",
+      "manifest": "_包/科幻奇幻/plugin.json",
+      "name": "科幻奇幻",
+      "status": "supported"
+    },
+    {
+      "id": "serial",
+      "manifest": "_包/网文连载/plugin.json",
+      "name": "网文连载",
+      "status": "supported"
+    }
+  ],
+  "registry_version": 1
+}

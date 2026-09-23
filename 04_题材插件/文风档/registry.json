@@ -1,0 +1,40 @@
+{
+  "format": "novel-voice-profiles",
+  "plugin_default": {
+    "romance": "romance",
+    "serial": "webnovel",
+    "speculative": "genre",
+    "suspense": "literary"
+  },
+  "profiles": [
+    {
+      "allow_categories": [],
+      "expressive": false,
+      "file": "literary.md",
+      "id": "literary",
+      "name": "文学克制"
+    },
+    {
+      "allow_categories": ["动作套路", "情绪套路", "连接与调度"],
+      "expressive": true,
+      "file": "webnovel.md",
+      "id": "webnovel",
+      "name": "网文爽文"
+    },
+    {
+      "allow_categories": ["动作套路", "情绪套路"],
+      "expressive": true,
+      "file": "romance.md",
+      "id": "romance",
+      "name": "言情细腻"
+    },
+    {
+      "allow_categories": ["连接与调度"],
+      "expressive": false,
+      "file": "genre.md",
+      "id": "genre",
+      "name": "类型紧凑"
+    }
+  ],
+  "registry_version": 1
+}

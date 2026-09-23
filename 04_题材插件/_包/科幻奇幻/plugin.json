@@ -1,0 +1,43 @@
+{
+  "chapter_mutable_files": [
+    "01_运行层/05d_规则使用记录.md"
+  ],
+  "files": [
+    {
+      "owner": "user",
+      "source": "templates/00_设定层/插件/speculative.md",
+      "target": "00_设定层/插件/speculative.md"
+    },
+    {
+      "owner": "user",
+      "source": "templates/01_运行层/05d_规则使用记录.md",
+      "target": "01_运行层/05d_规则使用记录.md"
+    },
+    {
+      "owner": "system",
+      "source": "templates/02_检查层/插件/speculative.md",
+      "target": "02_检查层/插件/speculative.md"
+    }
+  ],
+  "foundation_files": [
+    "00_设定层/插件/speculative.md"
+  ],
+  "id": "speculative",
+  "name": "科幻奇幻",
+  "required_markers": {
+    "00_设定层/插件/speculative.md": [
+      "## 规则卡",
+      "## 明确不成立"
+    ],
+    "01_运行层/05d_规则使用记录.md": [
+      "## 规则使用"
+    ],
+    "02_检查层/插件/speculative.md": [
+      "规则边界"
+    ]
+  },
+  "schema_versions": [
+    2
+  ],
+  "version": "3.7.0"
+}

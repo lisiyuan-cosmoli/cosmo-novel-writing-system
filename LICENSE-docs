@@ -1,0 +1,25 @@
+COSMO 小说创作系统：文档、空白模板与展示内容
+Copyright 2026 LISIYUAN
+
+本仓库的 .md、.txt、.html 文档、提示词、词表、空白模板，以及网站
+HTML 中的正文、结构、内联 SVG、原创流程示意以及 docs/assets/ 中
+的“卷页”标志 SVG 与 ICO，按以下许可提供：
+
+Creative Commons Attribution-ShareAlike 4.0 International
+CC BY-SA 4.0（署名—相同方式共享 4.0 国际版）
+
+正式条款：https://creativecommons.org/licenses/by-sa/4.0/legalcode
+中文说明：https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans
+
+你可以复制、分发和改编这些材料，包括商业使用；应按许可条款保留
+适当署名、许可链接和修改说明，改编材料按相同或许可兼容的方式共享，
+不得额外限制许可已允许的行为。以上仅为说明，不能替代正式条款。
+
+建议署名：
+“改编自 LISIYUAN 的《COSMO 小说创作系统》，采用 CC BY-SA 4.0。
+原项目：https://github.com/lisiyuan-cosmoli/cosmo-novel-writing-system
+修改说明：请写明实际修改。”
+
+软件另按 LICENSE 中的 Apache-2.0 提供，具体文件范围见 NOTICE。
+许可文本自身保留各自声明。系统许可不对使用者填写或创作的内容
+提出权利要求，也不要求使用者因使用本系统而公开自己的小说。
