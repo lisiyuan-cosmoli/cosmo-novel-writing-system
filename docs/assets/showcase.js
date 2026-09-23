@@ -7,17 +7,17 @@
     copied: 'Copied. Paste this prompt into your AI workspace and send it.',
     copyFallback: 'Automatic copying failed. The prompt is selected; please copy it manually.',
     scenarios: {
-      same: { title: 'Content and baseline match', draft: 'Version A', base: 'Original state', draftNote: 'Unchanged since approval', baseNote: 'Unchanged since the dry run', outcome: 'pass', result: 'Saving can proceed', note: 'Once the digest matches and required checks pass, the manuscript and related records are saved together.' },
-      draft: { title: 'The candidate changed after approval', draft: 'Version B', base: 'Original state', draftNote: 'Different from the approved version A', baseNote: 'Unchanged since the dry run', outcome: 'stop', result: 'Pause, rerun the dry run, and approve again', note: 'The new draft has a new content digest. The earlier approval does not cover it.' },
-      base: { title: 'Committed files changed after the dry run', draft: 'Version A', base: 'New state', draftNote: 'The candidate itself is unchanged', baseNote: 'Files involved in the change have been modified', outcome: 'stop', result: 'Pause and recheck against the current files', note: 'Resolve the baseline change, then rerun the dry run and obtain approval using the current evidence.' }
+      same: { title: 'Everything matches what you approved', draft: 'Version A', base: 'Original state', draftNote: 'Same as when you approved it', baseNote: 'Same as during the dry run', outcome: 'pass', result: 'Ready to save', note: 'Once the digest matches and the required checks pass, the chapters and related records are written together.' },
+      draft: { title: 'The draft changed after approval', draft: 'Version B', base: 'Original state', draftNote: 'No longer the version A you approved', baseNote: 'Same as during the dry run', outcome: 'stop', result: 'Saving paused: rerun the dry run and approve again', note: 'The new draft has a new content digest, so your earlier approval does not cover it.' },
+      base: { title: 'Book files changed after the dry run', draft: 'Version A', base: 'New state', draftNote: 'The draft itself is unchanged', baseNote: 'Files involved in this change were modified', outcome: 'stop', result: 'Saving paused: recheck against the current files', note: 'Resolve the file changes first, then rerun the dry run and approve, so nothing is saved against an outdated state.' }
     }
   } : {
-    copied: '已复制。粘贴到 AI 代理工作区并发送即可。',
+    copied: '已复制。粘贴到 AI 代理的工作区并发送即可。',
     copyFallback: '自动复制未成功，提示词已选中，请手动复制。',
     scenarios: {
-      same: { title: '内容与基线一致', draft: '版本 A', base: '原状态', draftNote: '与作者确认时相同', baseNote: '仍是试算时的状态', outcome: 'pass', result: '可以继续保存', note: '摘要匹配且必要检查通过后，正文与相关记录一起保存。' },
-      draft: { title: '确认之后，候选稿又改了', draft: '版本 B', base: '原状态', draftNote: '已不同于作者确认的版本 A', baseNote: '仍是试算时的状态', outcome: 'stop', result: '暂停保存，重新试算与确认', note: '新稿有新的内容摘要，旧批准不适用于新稿。' },
-      base: { title: '试算之后，相关正式文件变了', draft: '版本 A', base: '新状态', draftNote: '候选稿本身没有变化', baseNote: '参与修改的原文件已经变化', outcome: 'stop', result: '暂停保存，基于当前文件重新核对', note: '先处理基线变化，再重新试算并确认，避免沿用过时依据。' }
+      same: { title: '内容与确认时一致', draft: '版本 A', base: '原状态', draftNote: '与确认时一致', baseNote: '与试算时一致', outcome: 'pass', result: '可以保存', note: '摘要一致、必要检查通过后，正文与相关记录一起写入。' },
+      draft: { title: '确认之后，候选稿又改了', draft: '版本 B', base: '原状态', draftNote: '已不是你确认的版本 A', baseNote: '与试算时一致', outcome: 'stop', result: '暂停保存：重新试算并确认', note: '新稿有新的内容摘要，之前的确认不适用于它。' },
+      base: { title: '试算之后，正式文件变了', draft: '版本 A', base: '新状态', draftNote: '候选稿本身没有变化', baseNote: '相关的原文件已被修改', outcome: 'stop', result: '暂停保存：基于当前文件重新核对', note: '先处理文件变化，再重新试算并确认，避免依据过期的状态保存。' }
     }
   };
 

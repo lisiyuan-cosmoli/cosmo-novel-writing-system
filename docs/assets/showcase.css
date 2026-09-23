@@ -70,6 +70,7 @@ html:lang(en) .doc-row span:last-child { flex: 1 1 58%; }
 .button.secondary,.button.outline { color: #005aa7; background: var(--soft-blue); border-color: var(--soft-blue); }
 .button.secondary:hover,.button.outline:hover { background: #dbeeff; border-color: #dbeeff; }
 .hero-caption { margin-top: 1rem; font-size: .875rem; color: var(--muted); }
+.keep { display: inline-block; }
 .text-link { display: inline-flex; align-items: center; gap: .8rem; color: var(--accent); font-weight: 650; text-decoration: none; padding-block: .5rem; }
 .text-link:hover { text-decoration: underline; }
 .workspace-preview { margin: 3.5rem auto 0; border: 1px solid #d2d2d2; border-radius: 10px; background: #fff; box-shadow: 0 12px 40px #1919190d, 0 2px 6px #19191908; overflow: hidden; }
