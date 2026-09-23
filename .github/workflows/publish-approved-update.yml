@@ -1,0 +1,49 @@
+name: Publish approved website update
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Create approved commit with public attribution
+        id: commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          identity = {"name": "LISIYUAN", "email": "265684939+lisiyuan-cosmoli@users.noreply.github.com"}
+          payload = {"message": "Update bilingual website copy and story-memory headline", "tree": "1ea222754e27481205f4e03675252e7dfd482dc7", "parents": [os.environ["GITHUB_SHA"]], "author": identity, "committer": identity}
+          with open(os.environ["RUNNER_TEMP"] + "/commit.json", "w") as f:
+              json.dump(payload, f)
+          PY
+          sha=$(gh api --method POST repos/lisiyuan-cosmoli/cosmo-novel-writing-system/git/commits --input "$RUNNER_TEMP/commit.json" --jq .sha)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          echo "Approved commit: $sha" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ steps.commit.outputs.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - name: Verify and build approved files
+        run: |
+          python -B scripts/check_public_release.py
+          python -B novel.py doctor --template
+          python -B scripts/build_release.py --output-dir "$RUNNER_TEMP/release"
+          echo "be15e72e6c89540a1aa73fc2286388c418ad836e8f49bbc9cbf408c7c2e4355c  $RUNNER_TEMP/release/cosmo-novel-writing-system-6.0.zip" | sha256sum --check
+      - name: Update release archive and version tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+          APPROVED_SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          repo=lisiyuan-cosmoli/cosmo-novel-writing-system
+          test "$(gh api repos/$repo/git/ref/tags/v6.0 --jq .object.sha)" = "e223f110e1ba3a4c7c4824e426fac8149e8e35a3"
+          gh release upload v6.0 "$RUNNER_TEMP/release/cosmo-novel-writing-system-6.0.zip" "$RUNNER_TEMP/release/cosmo-novel-writing-system-6.0.files.json" "$RUNNER_TEMP/release/SHA256SUMS" --repo "$repo" --clobber
+          gh api --method PATCH repos/$repo/git/refs/tags/v6.0 -f sha="$APPROVED_SHA" -F force=true --silent
+          cat "$RUNNER_TEMP/release/SHA256SUMS" >> "$GITHUB_STEP_SUMMARY"
