@@ -1,10 +1,14 @@
 # COSMO Novel Writing System v6.0
 
+**From the first chapter to the last, help your AI keep track of the past.** By **LISIYUAN**.
+
 [中文说明](README.md) · [English website](https://lisiyuan-cosmoli.github.io/cosmo-novel-writing-system/en/) · [Releases](https://github.com/lisiyuan-cosmoli/cosmo-novel-writing-system/releases)
 
 This is a **concise English introduction**, not a full translation of the Chinese operating instructions. It covers obtaining the system, trying it and understanding its limits. The core operating instructions are still in Chinese.
 
-COSMO is a local workflow for an author working with an AI agent on a long novel. It keeps story records, prepares reading packages, checks consistency between files and requires review of a candidate and its digest before formal changes are committed. The author and the chosen AI agent do the writing and editorial work. Passing a software check does not establish literary quality.
+COSMO is a long-form fiction workflow built for AI agents. Your AI drafts the prose, and you set the direction and make the calls. Characters, foreshadowing, the outline and every revision are recorded and checked by COSMO, and nothing enters the manuscript until you approve it.
+
+It runs locally on the Python standard library, with no API key or account needed. I also hope it helps people without screenwriting or fiction-writing experience develop stories of their own. Passing a software check does not establish literary quality.
 
 ## Get started
 

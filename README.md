@@ -1,12 +1,14 @@
 # COSMO 小说创作系统 v6.0
 
-**让长篇小说的设定、正文和修改，有据可查。** 作者：**LISIYUAN**。
+**故事从开篇写到终章，前情与伏笔始终不忘。** 作者：**LISIYUAN**。
 
-面向作者与 AI 代理协作的本地创作系统。保存已经确认的故事状态，组织每章读取材料，核对跨章记录，并以候选、摘要批准和可恢复事务保护正式稿。核心只用 Python 标准库，不需要 API 密钥；它提供工作流与工具，写作和内容判断由作者与所用代理完成。
+COSMO 是为 AI 代理打造的长篇小说工作流。正文由 AI 起草，方向和取舍由你决定；人物、伏笔、大纲与每一次修改，都由 COSMO 记录、核对，经你确认后才写进正式稿。
+
+它在本地运行，只用 Python 标准库，不需要 API 密钥和账号。希望缺少编剧或小说创作能力的朋友，也能用它开发出自己独特的故事。
 
 [项目介绍与交互示意](https://lisiyuan-cosmoli.github.io/cosmo-novel-writing-system/) · [下载版本](https://github.com/lisiyuan-cosmoli/cosmo-novel-writing-system/releases) · [使用说明](使用说明_给你自己看.md) · [English introduction](https://github.com/lisiyuan-cosmoli/cosmo-novel-writing-system/blob/main/README.en.md) · [参与贡献](https://github.com/lisiyuan-cosmoli/cosmo-novel-writing-system/blob/main/CONTRIBUTING.md)
 
-网站是系统介绍和工作流演示，实际小说保存在你的本地项目中。适合需要连续性记录、候选审阅和可追溯修改的长篇创作；如果只需记几段随笔，可以先从自己的简单文档开始。
+网站是系统介绍和工作流演示，实际小说保存在你的本地项目中。适合要写几十章、需要前后连贯的长篇；如果只需记几段随笔，可以先从自己的简单文档开始。
 
 系统检查文件和记录，不能证明一章好看，也不能证明作者或代理已经认真读完。小说内容与创作决定由作者掌握。
 
